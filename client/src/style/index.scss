@@ -1,0 +1,27 @@
+@import 'navbar.component';
+@import 'formLogin.component';
+@import 'login.page';
+@import 'message.component';
+@import 'sidebar.component';
+@import 'loading.page';
+@import 'listChat.component';
+@import 'friendListChat.component';
+@import 'signup.page';
+@import 'formSignup.component';
+@import 'home.page';
+@import 'profile.page';
+@import 'profileContent.component';
+@import 'verify.page';
+@import 'userFound.component';
+@import 'otherProfileContent.component';
+@import 'homeContent.component';
+@import 'littleNavbar.component';
+@import 'chatContent.component';
+@import 'messageChat.component';
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

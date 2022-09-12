@@ -1,0 +1,52 @@
+.chat-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 500px);
+    height: calc(100vh - 74px);
+    align-items: center;
+
+    .message-with {
+        font-family: $f-big;
+        margin-top: 50px;
+    }
+
+    .send-message {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 20px;
+        width: 100%;
+
+        textarea {
+            height: 30px;
+            width: 80%;
+            font-family: $f-little;
+            font-size: 16px;
+        }
+        textarea:focus {
+            outline: 1px solid $c-gray;
+        }
+        textarea::-webkit-scrollbar {
+            display: none;
+        }
+
+        .btn-send {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $c-blue;
+            padding: 5px 10px;
+            margin-left: 50px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                color: white;
+                font-family: $f-little;
+            }
+        }
+    }
+}

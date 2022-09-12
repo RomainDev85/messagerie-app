@@ -1,0 +1,44 @@
+@import 'var/colors';
+@import 'var/fonts';
+
+.msg-error {
+    background: $c-red;
+    font-family: $f-little;
+    display: flex;
+    border-radius: 8px;
+    margin: 5px;
+
+    p {
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    i {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+.msg-success {
+    background: $c-green;
+    font-family: $f-little;
+    display: flex;
+    border-radius: 8px;
+    margin: 5px;
+
+    p {
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    i {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        color: #fff;
+    }
+}

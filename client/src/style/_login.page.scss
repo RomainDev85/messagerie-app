@@ -1,0 +1,12 @@
+@import 'var/colors';
+@import 'var/fonts';
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../public/images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg');
+    background-size: cover;
+}

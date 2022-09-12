@@ -1,0 +1,151 @@
+@import 'var/colors';
+@import 'var/fonts';
+
+.profile-content {
+    position: relative;
+    width: calc(100vw - 500px);
+    background-color: rgba($color: $c-gray, $alpha: .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .card-profile {
+        position: relative;
+        padding: 40px;
+        background-color: #fff;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .fa-power-off {
+            color: red;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            height: 150px;
+            -o-object-fit: cover;
+               object-fit: cover;
+
+        }
+
+        .update-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .file-input_input {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+            .file-input_label {
+                font-family: $f-little;
+
+                i {
+                    margin-left: 20px;
+                    color: $c-yellow;
+                    cursor: pointer;
+                }
+            }
+            .btn-update-img {
+                i.fa-check {
+                    color: $c-green;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                i.fa-xmark {
+                    color: $c-red;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        ul {
+            padding: 0px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                font-family: $f-little;
+
+                h2 {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                
+                .content {
+                    display: flex;
+                    align-items: center;
+                    
+                    
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        color: $c-gray;
+                    }
+
+                    i {
+                        margin-left: 20px;
+                        color: $c-yellow;
+                        cursor: pointer;
+                    }
+                }
+
+                .content-update {
+                    display: flex;
+                    
+                    input {
+                        padding: 2px 4px;
+                        font-family: $f-little;
+                        color: $c-gray;
+                    }
+
+                    .btn {
+                        margin-left: 20px;
+
+                        .fa-check {
+                            color: $c-green;
+                            margin-right: 5px;
+                        }
+
+                        .fa-xmark {
+                            color: $c-red;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .btn-update-pw {
+                margin-top: 20px;
+                text-decoration: underline;
+                color: $c-blue;
+            }
+        }
+    }
+}

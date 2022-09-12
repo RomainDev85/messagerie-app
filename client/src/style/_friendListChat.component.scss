@@ -1,0 +1,39 @@
+@import 'var/colors';
+@import 'var/fonts';
+
+.friend-sidebar {
+    border-bottom: 1px solid $c-gray;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+
+    .left {
+        min-width: 40px;
+        width: 10%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .right {
+        max-width: calc(100% - 40px);
+        width: 90%;
+        margin-left: 10px;
+
+        h3 {
+            margin: 0;
+            font-family: $f-big;
+        }
+
+        p {
+            margin: 0;
+            font-family: $f-little;
+            color: $c-gray;
+        }
+    }
+}

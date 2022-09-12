@@ -1,0 +1,141 @@
+@import 'var/colors';
+@import 'var/fonts';
+
+.form-signup {
+    border: 1px solid black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+
+    h1 {
+        font-family: $f-big;
+    }
+
+    .form-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+
+        label {
+            font-size: 20px;
+            font-family: $f-little;
+            text-align: center;
+        }
+
+        input[type=text], input[type=password] {
+            padding: 5px;
+        }
+        input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder {
+            font-family: $f-little;
+        }
+        input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder {
+            font-family: $f-little;
+        }
+        input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder {
+            font-family: $f-little;
+        }
+        input[type=text]::-ms-input-placeholder, input[type=password]::-ms-input-placeholder {
+            font-family: $f-little;
+        }
+        input[type=text]::placeholder, input[type=password]::placeholder {
+            font-family: $f-little;
+        }
+
+        input[type=submit] {
+            background: $c-blue;
+            color: #fff;
+            border: 0px;
+            padding: 5px 15px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            border-radius: 2px;
+            font-family: $f-little;
+            font-size: 16px;
+        }
+
+
+        .forgot-password {
+            color: $c-blue;
+            text-decoration: none;
+            font-family: $f-little;
+            font-size: 14px;
+        }
+
+        .no-acc {
+            font-family: $f-little;
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .btn-no-acc {
+            text-decoration: none;
+            background: $c-blue;
+            color: #fff;
+            border-radius: 2px;
+            font-family: $f-little;
+            font-size: 16px;
+            padding: 5px 15px;
+        }
+
+        .input-password {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eye-password {
+            position: absolute;
+            right: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .input-file {
+            opacity: 0;
+            width: 0.1px;
+            height: 0.1px;
+            position: absolute;
+        }
+
+        .btn-input-file {
+            display: flex;
+            position: relative;
+            font-family: $f-little;
+            font-size: 16px;
+            padding: 4px 8px;
+            border-radius: 5px;
+            background: linear-gradient(40deg, $c-blue, #7873f5);
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            cursor: pointer;
+            transition: transform .2s ease-out;
+        }
+
+        .file-name {
+            position: absolute;
+            bottom: -35px;
+            left: 10px;
+            font-size: 0.85rem;
+            color: black;
+        }
+
+        .empty-ok {
+            margin: 0;
+            font-style: italic;
+            font-family: $f-little;
+            font-size: 14px;
+        }
+    }
+}
